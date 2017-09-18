@@ -1,0 +1,298 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Locate</title>
+	
+
+	<!-- STYLESHEETS-->
+	<link rel="stylesheet" type="text/css" href="libraries/bootstrap/css/bootstrap.min.css">
+
+	<!-- CUSTOM STYLES -->
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	 <link rel="stylesheet" href="./libraries/owlcarousel/owl.carousel.min.css">
+	 <link rel="stylesheet" href="./libraries/owlcarousel/owl.theme.default.css">
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/checkbox.css"> -->
+	
+	
+
+
+	<!-- WEBFONT -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+
+	<!-- ICON -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class=" bg-grey99">
+	<header>
+		<nav class="navbar bg-trans p-t-20 mp-t-0" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand c-red w-900 f-40 mf-20"><span class="c-red"><i class="fa fa-map-marker" aria-hidden="true"></i></span> Locate</a>
+				</div>
+		
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<!-- <ul class="nav navbar-nav">
+						<li class="active"><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form> -->
+					<ul class="nav navbar-nav navbar-right">
+						<li class="m-t-10"><a href="index.html">Home</a></li>
+						<li class="m-t-10"><a href="#">About</a></li>
+						<li class="m-t-10"><a href="#">Contact</a></li>
+						<li class="m-t-10"><a href="login.html">Log In</a></li>
+						<li><a href="sign_up.html"><button type="button" class="btn c-white bg-red ">Sign Up</button></a></li>
+						<!-- <li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li><a href="#">Separated link</a></li>
+							</ul>
+						</li> -->
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8 p-t-5p p-b-5p">
+				<p class="c-red f-20 mf-20 w-900"><a href="pending.html"><span class="m-r-30 c-dark"><i class="fa fa-lg fa-angle-left"></i></span> Return To Pending Cases</a></p>
+				<div class="row m-t-5p">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<div class=" text-center">
+							<div class="owl-carousel owl-theme bs bd-4">
+							    <div class="item"><img src="assets/img/rectangle.png"></div>
+							    <div class="item"><img src="assets/img/1.jpeg"></div>
+							    <div class="item"><img src="assets/img/2.jpeg"></div>
+							    <div class="item"><img src="assets/img/3.jpeg"></div>
+							    
+							</div>
+							<!-- <img src="assets/img/rectangle.png" class="img-responsive  bs bd-4" id="imgtrigger"> -->
+			                <p class=" c-red f-18 mf-14 m-t-20 w-600">Views Photos</p>
+				        </div>
+			            <form action="" method="POST" role="form" name="formworka">
+			            	<div class="form-group">
+								<label for="">Fullname</label>
+								<input type="text" class="form-control" id="nameworka" required="" name="nameworka" onkeyup="checkName()" placeholder="Abraham Rahan">
+							</div>
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="">Age</label>
+										<input type="number" class="form-control" id="ageworka" placeholder="26" required="" onkeyup ="checkhage()" name="ageworka">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="">Gender</label>
+										<select type="text" class="form-control" id="genderwork"  required="" onchange="gender()">
+										<option>Male</option>
+										<option>Female</option>
+										<option>Others</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="">Complexion</label>
+										<select type="text" class="form-control" id="complexwork" placeholder="Dark" required="" onchange="complex()">
+											<option>Dark</option>
+											<option>choclate</option>
+											<option>Not Too Dark</option>
+											<option>Very dark</option>
+											<option>Fair</option>
+											<option>White</option>
+											<option>very fair</option>
+											<option>Albino</option>
+											<option>Not too fair</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="">Location</label>
+								<input type="text" class="form-control" id="lastworka" placeholder="Abule Egba" required="" name="lastseenworka" onkeyup="lastseen()">
+							</div>
+							<div class="form-group">
+								<label for="">Date</label>
+								<input type="text" class="form-control c-grey" id="" placeholder="06/20/2017" onfocus="(this.type='date')" name="date" onchange="checkDate()">
+							</div>
+						</form>
+						<p class="text-center">Have any news on Rahman Abraham?</p>
+						<p class="text-center">Please<span class="c-red"> contact</span> us now</p>
+						<p class="text-center">OR</p>
+						<p class="text-center">Help spread the word?</p>
+
+						
+						<div class="row">
+							<div class="col-md-1"></div>
+							<a href="#"><div class="col-md-10 bs bd-4 bg-white p-t-5p p-b-5p">
+								<div class="text-center">
+									<img src="assets/img/rectangle.png" class="img-circle width-50 h-50">
+								</div>
+								<p class="messagesend w-100 m-t-10"><b id="outputmising">Rahman Abraham</b>, <b id="age">26</b> Years of Age  gender <b id="genders">Male</b>, <b id="complex">Dark</b> in complexsion , has been missing since <b id="date">17-04-2001</b> last seen in <b id="lastseen">Abule Egba</b>. Pls Retweet. </p>
+								<li class="text-center f-30 p-l-80"  style="color: #00ABE3;"><i class="fa fa-lg fa-twitter"></i><span class="f-16 p-l-40 w-900">Tweet!</span></li>
+
+							</div></a>
+							<div class="col-md-1"></div>
+						</div>
+
+						<div class="row m-t-20">
+							<div class="col-md-1"></div>
+							<a href="#"><div class="col-md-10 bs bd-4 bg-white p-t-5p p-b-5p">
+								<div class="text-center">
+									<img src="assets/img/rectangle.png" class="img-circle width-50 h-50">
+								</div>
+								<p class="messagesend w-100 m-t-10"><b id="outputmising">Rahman Abraham</b>, <b id="age">26</b> Years of Age  gender <b id="genders">Male</b>, <b id="complex">Dark</b> in complexsion , has been missing since <b id="date">17-04-2001</b> last seen in <b id="lastseen">Abule Egba</b>.Pls spread the word. Share this post to your friends.  </p>
+								<li class="text-center f-30 p-l-80"  style="color: #4060A5;"><i class="fa fa-lg fa-facebook"></i><span class="f-16 p-l-40 w-900">Post it!</span></li>
+
+							</div></a>
+							<div class="col-md-1"></div>
+						</div>
+					</div>
+		            <div class="col-md-3"></div>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+	<div class="bg-overlay1 mbg-overlay1"></div>
+
+	<div class="bg-head2">
+		<div class="container p-t-5p p-b-10p">
+
+			<p class="c-white w-900 m-t-5p f-25 mf-20"><span class="c-red"><i class="fa fa-map-marker" aria-hidden="true"></i></span> Locate</p>
+
+			<div class="row m-t-20">
+				<div class="col-md-10">
+					<span class="c-red w-600">Disclaimer:</span><span> Locate is NOT a law enforcement agency and does not monitor criminal activities, make arrests or investigate crimes. Locate is a crowd sourcing platform that allows people to easily report a missing person, while it leverages on the use of social media to instantly engage citizens to help in search for the missing. Nothing on this website constitutes or create a Law enforcment-citizen relationship. Please contact your Local Police Station first to report cases of missing persons as it will be required to activate a CitiSearch.</span>
+				</div>
+				<div class="col-md-2 social text-center">
+					<li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
+					<li class="m-t-30"><a href="#"><i class="fa fa-lg fa-facebook"></i></a></li>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	
+	<script type="text/javascript" src="libraries/bootstrap/js/jquery-3.1.1.min.js"></script>
+
+    <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+    <script type="text/javascript">app.imageHandler();</script>
+    <script src="./libraries/owlcarousel/jquery.min.js"></script>
+    <script src="./libraries/owlcarousel/owl.carousel.js"></script>
+</body>
+	<script type="text/javascript">
+  //   	$(document).ready(function(){
+
+		// $('input[data-toggle="popover"]').popover({
+		//     placement: 'bottom',
+		//     trigger: 'focus'
+		// });
+
+		// })
+		$(document).ready(function(){
+		    $('[data-toggle="tooltip"]').tooltip();   
+		});
+
+
+    	$(function () {
+		  $('[data-toggle="popover"]').popover()
+		})
+    </script>
+    <script type="text/javascript">
+    	
+    		function checkName(){
+    			var message = document.getElementById('outputmising');
+    			var input = document.getElementById('nameworka');
+    			message.textContent = document.formworka.nameworka.value;
+    			var breaks = document.getElementsByTagName('br');
+    			// if (document.formworka.nameworka.value.lenght = 10){
+    			// 	alert("message?: DOMString");
+    			// }
+    		}
+    		function checkhage(){
+    			var ageworka = document.getElementById('age');
+    			ageworka.textContent = document.formworka.ageworka.value;
+    		}
+    		function checkDate(){
+    			var date = document.getElementById('date');
+    			date.textContent = document.formworka.date.value;
+    		}
+    		function lastseen(){
+    			var lastseen = document.getElementById('lastseen');
+    			var lastworka = document.getElementById('lastworka').value;
+    			lastseen.textContent = lastworka;
+    		}
+    		function gender(){
+    			var gender = document.getElementById('genders');
+    			var outgender = document.getElementById('genderwork').value;
+    			gender.textContent = outgender;
+    		}
+    		function complex(){
+    			var complex = document.getElementById('complex');
+    			var outcomplex = document.getElementById('complexwork').value;
+    			complex.textContent = outcomplex;
+    		}
+              var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                margin: 10,
+                nav: true,
+                loop: true,
+                autoplay:true,
+                autoplayHoverPause:true,
+                autoHeight:true,
+                center:true,
+                responsive: {
+                  0: {
+                    items: 1
+                  },
+                  600: {
+                    items: 1
+                  },
+                  1000: {
+                    items: 1
+                  }
+                }
+              });
+
+              // $('#imgtrigger').click(function(){
+              // 	$('.no-js .owl-carousel').css('display' , "block !important");
+              // 	$("#imgtrigger").css("display", "none");
+              // });
+            
+    </script>
+</html>
