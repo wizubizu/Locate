@@ -27,9 +27,21 @@
 	<!-- ICON -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class=" bg-grey90 p-t-5p">
+<body class=" bg-grey90">
+	<header>
+		<nav class="navbar bg-trans p-t-10 p-b-10 mp-b-0 mp-t-0 mm-b-0" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand c-red w-900 f-40 mf-20"><span class="c-red"><i class="fa fa-map-marker" aria-hidden="true"></i></span> Locate</a>
+				</div>
+		
+				
+			</div>
+		</nav>
+	</header>
 	
-	<div class="container">
+	<div class="container  p-t-5p mp-t-0">
 		<div class="row p-b-10p">
 			<div class="col-md-2"></div>
 			<div class="col-md-8 bg-grey99 p-t-5p p-b-5p bs">
@@ -58,21 +70,21 @@
 							
 							<div class="form-group">
 								<label for="">Full Name <span><i class="fa fa-circle c-red" aria-hidden="true"></i></span></label>
-								<input type="text" class="form-control" id="" placeholder="" required="">
+								<input type="text" class="form-control" id="" placeholder="" >
 							</div>
 
 							<div class="row">
 								<div class="col-md-4">
 									<div class="form-group">
 										<label for="">Age <span><i class="fa fa-circle c-red" aria-hidden="true"></i></span></label>
-										<input type="text" class="form-control" id="" placeholder="" required="">
+										<input type="text" class="form-control" id="" placeholder="" >
 									</div>
 								</div>
 								<div class="col-md-4"></div>
 								<div class="col-md-4">
 									<div class="form-group">
 										<label for="">Gender <span><i class="fa fa-circle c-red" aria-hidden="true"></i></span></label>
-										<input type="text" class="form-control" id="" placeholder="" required="">
+										<input type="text" class="form-control" id="" placeholder="" >
 									</div>
 								</div>
 							</div>
@@ -205,7 +217,7 @@
 					<div class="row p-t-5p">
 						<div class="col-md-9"></div>
 						<div class="col-md-3">
-							<button type="submit" class="btn c-white bg-red width-150 h-50 ">Submit</button>
+							<button type="button" class="btn c-white bg-red width-150 h-50 " data-toggle="modal" href='#modal-id'>Submit</button>
 						</div>
 					</div>
 				</form>
@@ -215,10 +227,10 @@
 		</div>
 
 		<!-- modal -->
-		<a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Trigger modal</a>
+		<!-- <a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Trigger modal</a> -->
 		<div class="modal fade" id="modal-id">
 			<div class="modal-dialog">
-				<div class="modal-content">
+				<div class="modal-content bg-grey99">
 					<div class="modal-header no-bd">
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 						<!-- <h4 class="modal-title">Modal title</h4> -->
@@ -228,14 +240,15 @@
 							<div class="col-md-3"></div>
 							<div class="col-md-6">
 								<p class="f-18">Your report has been received!<br>Locate will be getting<br> to work shortly.</p>
-								<span class="text-center c-red"><i class="fa fa-circle"></i></span>
+								<p class="text-center">
+								<img src="assets/img/thumb-up.png"></p>
 							</div>
 							<div class="col-md-3"></div>
 						</div>
 					</div>
 					<div class="modal-footer no-bd">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Save changes</button>
+						<button type="button" class="btn btn-default width-90" data-dismiss="modal">Close</button>
+						
 					</div>
 				</div>
 			</div>
