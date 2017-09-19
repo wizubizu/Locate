@@ -95,7 +95,55 @@
 							<!-- <img src="assets/img/rectangle.png" class="img-responsive  bs bd-4" id="imgtrigger"> -->
 			                <p class=" c-red f-18 mf-14 m-t-20 w-600">Views Photos</p>
 				        </div>
-			            <label for="">Fullname</label>
+			            <form action="" method="POST" role="form" name="formworka">
+			            	<div class="form-group">
+								<label for="">Fullname</label>
+								<input type="text" class="form-control" id="nameworka" required="" name="nameworka" onkeyup="checkName()" placeholder="Abraham Rahan">
+							</div>
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="">Age</label>
+										<input type="number" class="form-control" id="ageworka" placeholder="26" required="" onkeyup ="checkhage()" name="ageworka">
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="">Gender</label>
+										<select type="text" class="form-control" id="genderwork"  required="" onchange="gender()">
+										<option>Male</option>
+										<option>Female</option>
+										<option>Others</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<label for="">Complexion</label>
+										<select type="text" class="form-control" id="complexwork" placeholder="Dark" required="" onchange="complex()">
+											<option>Dark</option>
+											<option>choclate</option>
+											<option>Not Too Dark</option>
+											<option>Very dark</option>
+											<option>Fair</option>
+											<option>White</option>
+											<option>very fair</option>
+											<option>Albino</option>
+											<option>Not too fair</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="">Location</label>
+								<input type="text" class="form-control" id="lastworka" placeholder="Abule Egba" required="" name="lastseenworka" onkeyup="lastseen()">
+							</div>
+							<div class="form-group">
+								<label for="">Date</label>
+								<input type="text" class="form-control c-grey" id="" placeholder="06/20/2017" onfocus="(this.type='date')" name="date" onchange="checkDate()">
+							</div>
+						</form>
+						<label for="">Fullname</label>
 						<p class="bd-brand bd-4 p-5 bg-white">Abraham Rahan</p>
 						<div class="row">
 							<div class="col-md-4">
@@ -127,7 +175,7 @@
 								<div class="text-center">
 									<img src="assets/img/rectangle.png" class="img-circle width-50 h-50">
 								</div>
-								<p class=" m-t-10">Rahman Abraham, 26 Years of Age  gender Male Dark in complexsion , has been missing since 06-20-2017 last seen in Pls Retweet. </p>
+								<p class="messagesend w-100 m-t-10"><b id="outputmising">Rahman Abraham</b>, <b id="age">26</b> Years of Age  gender <b id="genders">Male</b>, <b id="complex">Dark</b> in complexsion , has been missing since <b id="date">17-04-2001 </b> last seen in <b id="lastseen">Abule Egba</b>. Pls Retweet. </p>
 								<li class="text-center f-30 p-l-80"  style="color: #00ABE3;"><i class="fa fa-lg fa-twitter"></i><span class="f-16 p-l-40 w-900">Tweet!</span></li>
 
 							</div></a>
@@ -140,7 +188,7 @@
 								<div class="text-center">
 									<img src="assets/img/rectangle.png" class="img-circle width-50 h-50">
 								</div>
-								<p class="m-t-10"> Rahman Abraham, 26 Years of Age  gender Male Dark in complexsion , has been missing since 06-20-2017 last seen in Abule Egba.Pls spread the word. Share this post to your friends.  </p>
+								<p class="messagesend w-100 m-t-10"><b id="outputmising">Rahman Abraham</b>, <b id="age">26</b> Years of Age  gender <b id="genders">Male</b>, <b id="complex">Dark</b> in complexsion , has been missing since <b id="date">17-04-2001 </b> last seen in <b id="lastseen">Abule Egba</b>.Pls spread the word. Share this post to your friends.  </p>
 								<li class="text-center f-30 p-l-80"  style="color: #4060A5;"><i class="fa fa-lg fa-facebook"></i><span class="f-16 p-l-40 w-900">Post it!</span></li>
 
 							</div></a>
