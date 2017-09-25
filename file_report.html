@@ -70,21 +70,27 @@
 							
 							<div class="form-group">
 								<label for="">Full Name <span><i class="fa fa-circle c-red" aria-hidden="true"></i></span></label>
-								<input type="text" class="form-control" id="" placeholder="" required="required">
+								<input type="text" class="form-control" id="first-name" placeholder="">
 							</div>
 
 							<div class="row">
 								<div class="col-md-4">
 									<div class="form-group">
 										<label for="">Age <span><i class="fa fa-circle c-red" aria-hidden="true"></i></span></label>
-										<input type="text" class="form-control" id="" placeholder="" required="required">
+										<input type="text" class="form-control" id="age" placeholder="">
 									</div>
 								</div>
 								<div class="col-md-4"></div>
 								<div class="col-md-4">
 									<div class="form-group">
 										<label for="">Gender <span><i class="fa fa-circle c-red" aria-hidden="true"></i></span></label>
-										<input type="text" class="form-control" id="" placeholder="" required="required">
+										<select name="" class="form-control">
+											<option value=""></option>
+											<option value="">Male</option>
+											<option value="">Female</option>
+										</select>
+										<!-- <label for="">Gender <span><i class="fa fa-circle c-red" aria-hidden="true"></i></span></label>
+										<input type="text" class="form-control" id="" placeholder="" required="required"> -->
 									</div>
 								</div>
 							</div>
@@ -257,7 +263,7 @@
 					<div class="row p-t-5p">
 						<div class="col-md-9"></div>
 						<div class="col-md-3">
-							<button type="submit" class="btn c-white bg-red width-150 h-50 " data-toggle="modal" href='#modal-id'>Submit</button>
+							<button id="show-success" type="submit" class="btn c-white bg-red width-150 h-50 " data-toggle="modal" href='#modal-id'>Submit</button>
 						</div>
 					</div>
 				</form>
@@ -300,10 +306,10 @@
 	<script type="text/javascript" src="libraries/bootstrap/js/jquery-3.1.1.min.js"></script>
 
     <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+  
     <script type="text/javascript" src="assets/js/main.js"></script>
 
-    <script type="text/javascript" src="assets/js/main.js"></script>
-
+    
     <script type="text/javascript">app.imageHandler();</script>
 </body>
 	<script type="text/javascript">
@@ -326,5 +332,36 @@
 		if ($('form').valid()) {
     $('modal').modal('show')
 }
+    </script>
+
+    <script type="text/javascript">
+		(function(){
+			var validated = false;
+			var submitButton = $('#show-success').attr('disabled', true);
+			var firstName = $('#first-name').bind('keyup', validate);
+			var age = $('#age').bind('keyup', validate);
+			// var email = $('#email').bind('keyup', validate);
+
+			function validate(){
+				// Check if field 1 is valid
+				field1Check = firstName.val().length > 1;
+
+				// Check if field 2 is valid
+				field2Check = age.val().length > 1;
+
+				// Check if field 3 is valid
+				// field3Check = email.val().length > 1;
+
+				validated = field1Check & field2Check ;
+
+				if(validated){
+					submitButton.removeAttr('disabled')
+				} else {
+					submitButton.attr('disabled', true);
+				}
+			};
+
+
+		})()
     </script>
 </html>
