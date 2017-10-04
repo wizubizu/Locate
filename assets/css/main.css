@@ -1,4 +1,4 @@
- /*=================================================================
+/*=================================================================
 	Basic Setup
 ==================================================================*/
 html {
@@ -13,7 +13,7 @@ body {
 	color: #222222;
 	font-weight: normal;
 	overflow-x: hidden;
-	line-height: 25px;
+	line-height: 20px;
 }
  
 a,
@@ -356,6 +356,7 @@ select:focus {
 .f-40{font-size:40px !important;}
 .f-45{font-size:45px !important;}
 .f-50{font-size:50px !important;}
+.f-58{font-size:58px !important;}
 .f-60{font-size:60px !important;}
 .f-65{font-size:65px !important;}
 .f-78{font-size:78px !important;}
