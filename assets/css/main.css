@@ -15,6 +15,9 @@ body {
 	overflow-x: hidden;
 	line-height: 20px;
 }
+
+.l-h{line-height: 30px;}
+.l-h1{line-height: 25px;}
  
 a,
 a:active,
@@ -27,12 +30,23 @@ a:visited{
 	color:inherit;
 }
 
+.a:hover{color:#EE2824 !important; }
+
 button:focus{
 	outline:none;
 }
 
+button:hover{
+	background: white !important;
+	color: #F90707 !important;
+}
+
 li{
 	list-style:none;
+}
+
+.li {
+     list-style: initial !important; 
 }
 
 article,
@@ -118,6 +132,7 @@ select:focus {
 .m-t-10p{margin-top:10% !important; }
 .m-t-12p{margin-top:12% !important; }
 .m-t-15p{margin-top:15% !important; }
+.m-t-17p{margin-top:17% !important; }
 .m-t-20p{margin-top:20% !important; }
 .m-t-21p{margin-top:21% !important; }
 .m-t-30p{margin-top:30% !important; }
@@ -225,6 +240,7 @@ select:focus {
 .p-t-100 {padding-top:100px !important;}
 .p-t-111 {padding-top:111px !important;}
 .p-t-140 {padding-top:140px !important;}
+.p-t-3p {padding-top:3% !important}
 .p-t-5p {padding-top:5% !important}
 .p-t-7p {padding-top:7% !important}
 .p-t-10p {padding-top:10% !important}
